@@ -1,0 +1,42 @@
+.products {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 25% auto;
+}
+
+.product {
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    height: 10rem;
+    overflow: hidden;
+    padding: 1rem;
+    position: relative;
+    width: 14rem;
+
+}
+
+.product>img{
+    top: 3rem !important;
+    height: 11rem;
+    width: 6rem;
+}
+
+.img-p {
+    bottom: -20%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    width: 40%;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    height: 25rem;
+    overflow-y: scroll;
+    grid-gap: 2rem;
+    justify-content: space-between;
+}
