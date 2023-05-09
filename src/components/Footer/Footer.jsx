@@ -8,21 +8,21 @@ import {
   UsersIcon,
   LinkIcon,
 } from "@heroicons/react/outline";
-import css from "./Footer.module.css";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="w-[100%] mt-[5rem]">
+    <div className=" w-[100%] mt-[5rem]">
       <hr className="w-[100%] h-[1px] border-none bg-[white] mt-[1rem]" />
 
-      <div className="flex w-[100%] justify-around">
+      <div className="cFooter flex w-[100%] justify-around">
         <div className="flex items-start gap-[1rem]">
-          <img src={Logo} alt="" className="h-[2.5rem] w-[2.5rem]" />
-          <span className="font-semibold text-[1rem]">Amazon</span>
+          <img src={Logo} alt="" className="flogo h-[2.5rem] w-[2.5rem]" />
+          <span className="flogo font-semibold text-[1rem]">Amazon</span>
         </div>
 
         <div className="flex flex-col gap-[1rem] max-w-[12rem]">
-          <div className={css.detail}>
+          <div className="detail">
             <span>Contact US</span>
             <span className="hover:cursor-pointer flex gap-[1rem] items-center ">
               <LocationMarkerIcon className="w-[25px]" />
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[1rem] max-w-[12rem]">
-          <div className={css.detail}>
+          <div className="detail">
             <span>Account</span>
             <span className="hover:cursor-pointer flex gap-[1rem] items-center ">
               <LoginIcon className="w-[25px]" />
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[1rem] max-w-[12rem]">
-          <div className={css.detail}>
+          <div className="detail">
             <span>Company</span>
             <span className="hover:cursor-pointer flex gap-[1rem] items-center ">
               <UsersIcon className="w-[25px]" />
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-[1rem] max-w-[12rem]">
-          <div className={css.detail}>
+          <div className="detail">
             <span>Resources</span>
             <span className="hover:cursor-pointer flex gap-[1rem] items-center ">
               <LinkIcon className="w-[25px]" />

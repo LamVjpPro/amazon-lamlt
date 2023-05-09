@@ -1,0 +1,44 @@
+@media screen and (max-width: 640px) {
+    .right {
+        position: absolute;
+        right: 2rem;
+        z-index: 9999;
+        background: white;
+        color: var(--black);
+        border-radius: 5px;
+        padding: 1rem;
+        display: grid;
+        justify-items: center;
+
+    }
+    .menu>li {
+        padding: 0.5rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    .bars {
+        display: block;
+    }
+    .search {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 856px) {
+    .search {
+        display: none;
+    }
+
+    .right {
+        gap: 1rem;
+    }
+
+    .bars {
+        /* display: none; */
+    }
+}

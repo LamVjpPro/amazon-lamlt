@@ -12,8 +12,16 @@ import { SliderProducts } from "../../data/products";
 
 const Silder = () => {
   return (
-    <div className="relative">
+    <div className="relative s-container">
       <Swiper
+        breakpoints={{
+          640: {
+            slidesPerView: 3,
+          },
+          0: {
+            slidesPerView: 1,
+          },
+        }}
         modules={[Pagination, Navigation]}
         className="w-[70%] h-[12rem] static "
         navigation={true}

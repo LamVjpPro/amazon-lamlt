@@ -3,10 +3,11 @@ import Shade from "../../assets/shade.png";
 import Before from "../../assets/before.png";
 import After from "../../assets/after.png";
 import ReactCompareImage from "react-compare-image";
+import "./Virtual.css";
 
 const Virtual = () => {
   return (
-    <div className="mt-[6rem] mb-[6rem] p-[2rem] flex justify-around">
+    <div className="mt-[6rem] mb-[6rem] p-[2rem] flex justify-around Virtual">
       <div className="flex flex-col gap-[2rem] relative">
         <span className="text-[2rem] uppercase block w-[20rem] font-bold">
           Virtual Try-On

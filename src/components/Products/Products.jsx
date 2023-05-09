@@ -1,8 +1,8 @@
 import { React, useState } from "react";
 import Plan from "../../assets/plane.png";
-import css from "./Products.module.css";
 import { ProductsData } from "../../data/products";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import "./Products.css";
 
 const Products = () => {
   const [parent] = useAutoAnimate();
@@ -14,16 +14,16 @@ const Products = () => {
   };
 
   return (
-    <div className="px-0 py-[2rem] relative flex felx-col gap-[2rem] items-center justify-center flex-wrap">
+    <div className="mobile tablet px-0 py-[2rem] relative flex felx-col gap-[2rem] items-center justify-center flex-wrap">
       <img
         src={Plan}
         alt=""
-        className="absolute w-[8rem] left-[30%] top-[-3rem]"
+        className="absolute w-[8rem] left-[30%] top-[-3rem] img-mid"
       />
       <h1>Our Feature Products</h1>
 
-      <div className={css.products}>
-        <ul className="list-none flex flex-col gap-[2rem] font-medium text-[1.3rem]">
+      <div className="products">
+        <ul className="menu list-none flex flex-col gap-[2rem] font-medium text-[1.3rem]">
           <li
             onClick={() => setMenuProducts(ProductsData)}
             className="hover:text-[pink] hover:cursor-pointer"
@@ -50,9 +50,9 @@ const Products = () => {
           </li>
         </ul>
 
-        <div className={css.list} ref={parent}>
+        <div className="list" ref={parent}>
           {MenuProducts.map((product, i) => (
-            <div className={css.product}>
+            <div className="product">
               <div className="">
                 <div className="">
                   <span className="text-[1.4rem] font-semibold flex">
